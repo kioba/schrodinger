@@ -1,0 +1,4 @@
+rootProject.name = 'schrodinger'
+include 'main'
+findProject(':main')?.name = 'schrodinger'
+
