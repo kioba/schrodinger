@@ -1,3 +1,4 @@
+import dev.kioba.cat.*
 import org.junit.jupiter.api.Test
 
 class CatTest {
@@ -9,7 +10,7 @@ class CatTest {
 
     @Test
     fun identityTest() {
-        assert(identity(0) == 0) { "Identity returns the value" }
+        assert(id(0) == 0) { "Identity returns the value" }
     }
 
     @Test
