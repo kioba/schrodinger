@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>map - schrodinger</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">schrodinger</a>&nbsp;/&nbsp;<a href="index.html">dev.kioba.cat</a>&nbsp;/&nbsp;<a href="./map.html">map</a><br/>
+<br/>
+<h1>map</h1>
+<a name="dev.kioba.cat$map(dev.kioba.cat.map.A, kotlin.Function1((dev.kioba.cat.map.A, dev.kioba.cat.map.B)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">, </span><span class="identifier">B</span><span class="symbol">&gt;</span> <a href="map.html#A"><span class="identifier">A</span></a><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">map</span><span class="symbol">(</span><span class="identifier" id="dev.kioba.cat$map(dev.kioba.cat.map.A, kotlin.Function1((dev.kioba.cat.map.A, dev.kioba.cat.map.B)))/f">f</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="map.html#A"><span class="identifier">A</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="map.html#B"><span class="identifier">B</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="map.html#B"><span class="identifier">B</span></a><span class="symbol">?</span></code>
+<p>Map higher order function takes the right side value and applies f.</p>
+<p>Example usage:</p>
+<pre><code>1.map{ it.toString() } // "1"
+</code></pre><pre><code>null.map{ "Hello World" } // null
+</code></pre>
+<h3>Parameters</h3>
+<p><a name="f"></a>
+<code>f</code> - function to apply on the right side value.</p>
+<p><strong>Receiver</strong><br/>
+the value which $f will be applied if it is a right side value.</p>
+<p><strong>Return</strong><br/>
+the result of applying $f on the value if it is a right side value otherwise null.</p>
+</BODY>
+</HTML>

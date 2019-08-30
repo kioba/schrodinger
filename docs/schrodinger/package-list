@@ -1,0 +1,4 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:dev.kioba.cat$maybe(kotlin.Boolean, kotlin.Function0((dev.kioba.cat.maybe.A)))dev.kioba.cat/kotlin.-boolean/maybe.html
+dev.kioba.cat

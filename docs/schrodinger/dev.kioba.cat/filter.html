@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>filter - schrodinger</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">schrodinger</a>&nbsp;/&nbsp;<a href="index.html">dev.kioba.cat</a>&nbsp;/&nbsp;<a href="./filter.html">filter</a><br/>
+<br/>
+<h1>filter</h1>
+<a name="dev.kioba.cat$filter(dev.kioba.cat.filter.A, kotlin.Function1((dev.kioba.cat.filter.A, kotlin.Boolean)))"></a>
+<code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="filter.html#A"><span class="identifier">A</span></a><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">filter</span><span class="symbol">(</span><span class="identifier" id="dev.kioba.cat$filter(dev.kioba.cat.filter.A, kotlin.Function1((dev.kioba.cat.filter.A, kotlin.Boolean)))/f">f</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="filter.html#A"><span class="identifier">A</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="filter.html#A"><span class="identifier">A</span></a><span class="symbol">?</span></code>
+<p>Returns the $receiver value if the result of $f applied on it is true otherwise null.</p>
+<p>Example usage:</p>
+<pre><code>1.filter{ it &gt; 5 } // null
+
+1.filter{ it &lt; 5 } // 1
+</code></pre>
+<h3>Parameters</h3>
+<p><a name="f"></a>
+<code>f</code> - function to apply in the right side value.</p>
+<p><strong>Receiver</strong><br/>
+the vlaue which $f will be appliead on.</p>
+<p><strong>Return</strong><br/>
+the receiver if the result of applying $f on the right side value is true otherwise null.</p>
+</BODY>
+</HTML>
