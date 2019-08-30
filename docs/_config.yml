@@ -1,1 +1,7 @@
+title: "Schrodinger"
+description: "Schrodinger Arrow"
+url: https://kioba.dev/permalink
+relative_permalinks: false
+
+markdown: kramdown
 theme: jekyll-theme-slate
