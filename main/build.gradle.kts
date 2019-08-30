@@ -42,7 +42,7 @@ tasks.withType<KotlinCompile>().configureEach {
 val dokka by tasks.getting(DokkaTask::class) {
     outputDirectory = "${rootProject.projectDir}/docs"
     // outputFormat = "gfm"
-    outputFormat = "html"
+    outputFormat = "jekyll"
     jdkVersion = 8
     reportUndocumented = true
     includeNonPublic = true
