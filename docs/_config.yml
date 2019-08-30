@@ -1,5 +1,5 @@
 title: "Schrodinger"
-description: "Schrodinger Arrow"
+description: "An Arrow option iplementation with Nullable types"
 url: https://kioba.dev/schrodinger
 relative_permalinks: false
 

@@ -1,26 +1,22 @@
----
-title: flatMap - schrodinger
-layout: api
----
-
-<div class='api-docs-breadcrumbs'><a href="../index.html">schrodinger</a> / <a href="index.html">dev.kioba.cat</a> / <a href="./flat-map.html">flatMap</a></div>
+[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [flatMap](./flat-map.md)
 
 # flatMap
 
-<div class="signature"><code><span class="keyword">inline</span> <span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">, </span><span class="identifier">B</span><span class="symbol">&gt;</span> <a href="flat-map.html#A"><span class="identifier">A</span></a><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">flatMap</span><span class="symbol">(</span><span class="parameterName" id="dev.kioba.cat$flatMap(dev.kioba.cat.flatMap.A, kotlin.Function1((dev.kioba.cat.flatMap.A, dev.kioba.cat.flatMap.B)))/f">f</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="flat-map.html#A"><span class="identifier">A</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="flat-map.html#B"><span class="identifier">B</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="flat-map.html#B"><span class="identifier">B</span></a><span class="symbol">?</span></code></div>
+`inline fun <A, B> `[`A`](flat-map.md#A)`?.flatMap(f: (`[`A`](flat-map.md#A)`) -> `[`B`](flat-map.md#B)`?): `[`B`](flat-map.md#B)`?`
 
 Returns the result of $f if the $receiver is a right side value.
 
 Example usage:
 
-<pre markdown="1">1.flatMap{ getAge() }
+```
+1.flatMap{ getAge() }
 
 null.flatMap{ getAge() }
-</pre>
+```
 
 ### Parameters
 
-<code>f</code> - function to apply in the right side value.
+`f` - function to apply in the right side value.
 
 **Receiver**
 the vlaue which $f will be appliead if it is a right side value.

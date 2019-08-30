@@ -1,4 +1,4 @@
-$dokka.format:kotlin-website
-$dokka.linkExtension:html
-$dokka.location:dev.kioba.cat$maybe(kotlin.Boolean, kotlin.Function0((dev.kioba.cat.maybe.A)))dev.kioba.cat/kotlin.-boolean/maybe.html
+$dokka.format:gfm
+$dokka.linkExtension:md
+$dokka.location:dev.kioba.cat$maybe(kotlin.Boolean, kotlin.Function0((dev.kioba.cat.maybe.A)))dev.kioba.cat/kotlin.-boolean/maybe.md
 dev.kioba.cat
