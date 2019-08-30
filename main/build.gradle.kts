@@ -42,14 +42,13 @@ tasks.withType<KotlinCompile>().configureEach {
 val dokka by tasks.getting(DokkaTask::class) {
     outputDirectory = "${rootProject.projectDir}/docs"
     // outputFormat = "gfm"
-    outputFormat = "jekyll"
+    // outputFormat = "jekyll"
+    outputFormat = "kotlin-website"
     jdkVersion = 8
     reportUndocumented = true
-    includeNonPublic = true
-    skipDeprecated = false
-    // Emit warnings about not documented members. Applies globally, also can be overridden by packageOptions
-    reportUndocumented = true
-    skipEmptyPackages = false // Do not create index pages for empty packages
+    includeNonPublic = false
+    skipDeprecated = true
+    skipEmptyPackages = true
 
     impliedPlatforms = mutableListOf("JVM")
 }

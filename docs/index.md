@@ -1,13 +1,28 @@
 ---
 title: schrodinger
+layout: api
 ---
 
-[schrodinger](./index.html)
+
 
 ### Packages
 
-| [dev.kioba.cat](dev.kioba.cat/index.html) |  |
+<table class="api-docs-table">
+<tbody>
+<tr>
+<td markdown="1">
+
+<a href="dev.kioba.cat/index.html">dev.kioba.cat</a>
+
+
+</td>
+<td markdown="1">
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Index
 
-[All Types](alltypes/index.html)
+<a href="alltypes/index.html">All Types</a>

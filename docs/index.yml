@@ -1,0 +1,43 @@
+- title: schrodinger
+  url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/index.html
+  content:
+    - title: alltypes
+      url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/alltypes/index.html
+      content:
+        - title: kotlin.Boolean
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/kotlin.-boolean/index.html
+          content:
+            - title: maybe
+              url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/kotlin.-boolean/maybe.html
+    - title: dev.kioba.cat
+      url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/index.html
+      content:
+        - title: empty
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/empty.html
+        - title: exists
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/exists.html
+        - title: filter
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/filter.html
+        - title: filterNot
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/filter-not.html
+        - title: flatMap
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/flat-map.html
+        - title: fold
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/fold.html
+        - title: id
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/id.html
+        - title: isEmpty
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/is-empty.html
+        - title: isSome
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/is-some.html
+        - title: kotlin.Boolean
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/kotlin.-boolean/index.html
+          content:
+            - title: maybe
+              url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/kotlin.-boolean/maybe.html
+        - title: map
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/map.html
+        - title: or
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/or.html
+        - title: orElse
+          url: /Users/kioba.somodi/Develop/schrodinger/docs/schrodinger/dev.kioba.cat/or-else.html

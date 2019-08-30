@@ -98,7 +98,7 @@ inline fun <A, B> A?.fold(ifNull: () -> B, ifSome: (A) -> B): B =
 
 
 /**
- * Map higher order function takes the right side value and applies f.
+ * Map higher order function takes the right side value and applies on f.
  *
  * Example usage:
  *
@@ -192,12 +192,23 @@ inline fun <A> A?.orElse(f: () -> A): A =
 /**
  *
  */
-fun <A> A?.or(a: A): A = 
-    fold({ a }, ::id)
+fun <A> A?.or(f: () -> A): A = 
+    fold(::f, ::id)
 
 
 /**
+ * returns the result of $f in case of the receiver is true otherwsie null.
  *
+ * Example usage:
+ * ```
+ * true.maybe{ 1 } // 1
+ *
+ * false.maybe{ 1 } // null
+ * ```
+ *
+ * @receiver value which $f will be applied on.
+ * @param f function to apply if the receiver is true.
+ * @return the result of f if the receiver is true otherwise null.
  */
 fun <A> Boolean.maybe(f: () -> A): A? = 
     if (this) f() else null

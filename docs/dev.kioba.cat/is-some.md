@@ -1,23 +1,23 @@
 ---
 title: isSome - schrodinger
+layout: api
 ---
 
-[schrodinger](../index.html) / [dev.kioba.cat](index.html) / [isSome](./is-some.html)
+<div class='api-docs-breadcrumbs'><a href="../index.html">schrodinger</a> / <a href="index.html">dev.kioba.cat</a> / <a href="./is-some.html">isSome</a></div>
 
 # isSome
 
-`fun <A> `[`A`](is-some.html#A)`?.isSome(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+<div class="signature"><code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">A</span><span class="symbol">&gt;</span> <a href="is-some.html#A"><span class="identifier">A</span></a><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">isSome</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></div>
 
 Checks if the values is right value or not.
 
 Example usage:
 
-```
-val myVal: Int = 1
+<pre markdown="1">val myVal: Int = 1
 if(myVal.isSome()) {
   // code
 }
-```
+</pre>
 
 **Receiver**
 the value for identification.
