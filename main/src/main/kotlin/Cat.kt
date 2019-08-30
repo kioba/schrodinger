@@ -1,5 +1,6 @@
 package dev.kioba.cat
 
+
 /**
  * Constructs a left side value.
  *
@@ -17,6 +18,7 @@ package dev.kioba.cat
  */
 fun <A> empty(): A? = null
 
+
 /**
  * Identity function.
  *
@@ -30,6 +32,7 @@ fun <A> empty(): A? = null
  * @return the given argument.
  */
 fun <A> id(a: A): A = a
+
 
 /**
  * Checks if the values is left value or not.
@@ -46,7 +49,9 @@ fun <A> id(a: A): A = a
  * @receiver will be used as the value for identification.
  * @return True if the value is null
  */
-fun <A> A?.isEmpty(): Boolean = this == null
+fun <A> A?.isEmpty(): Boolean = 
+    this == null
+
 
 /**
  * Checks if the values is right value or not.
@@ -63,7 +68,9 @@ fun <A> A?.isEmpty(): Boolean = this == null
  * @receiver the value for identification.
  * @return True if the value is some
  */
-fun <A> A?.isSome(): Boolean = !isEmpty()
+fun <A> A?.isSome(): Boolean = 
+    !isEmpty()
+
 
 /**
  * Fold higher order function reduces the left or right side into a return value
@@ -86,7 +93,9 @@ fun <A> A?.isSome(): Boolean = !isEmpty()
  * @param ifSome the lambda will be applied with the right side value.
  * @return result of $ifNull if the $receiver is null otherwise the result of $ifSome
  */
-inline fun <A, B> A?.fold(ifNull: () -> B, ifSome: (A) -> B): B = if (this == null) ifNull() else ifSome(this)
+inline fun <A, B> A?.fold(ifNull: () -> B, ifSome: (A) -> B): B = 
+    if (this == null) ifNull() else ifSome(this)
+
 
 /**
  * Map higher order function takes the right side value and applies f.
@@ -101,48 +110,94 @@ inline fun <A, B> A?.fold(ifNull: () -> B, ifSome: (A) -> B): B = if (this == nu
  * null.map{ "Hello World" } // null
  * ```
  *
- * @receiver the value which f will be applied if it is a right side value.
+ * @receiver the value which $f will be applied if it is a right side value.
  * @param f function to apply on the right side value.
  * @return the result of applying $f on the value if it is a right side value otherwise null.
  */
-inline fun <A, B> A?.map(f: (A) -> B): B? = flatMap(f)
+inline fun <A, B> A?.map(f: (A) -> B): B? = 
+    flatMap(f)
+
+
+/**
+ * Returns the result of $f if the $receiver is a right side value.
+ * 
+ * Example usage:
+ * 
+ * ```
+ * 1.flatMap{ getAge() }
+ *
+ * null.flatMap{ getAge() }
+ * ```
+ * 
+ * @receiver the vlaue which $f will be appliead if it is a right side value.
+ * @param f function to apply in the right side value.
+ * @return the result of applying $f on the value if it is a right side value otherwise null.
+ */
+inline fun <A, B> A?.flatMap(f: (A) -> B?): B? = 
+    this?.let(f)
+
+
+/**
+ * Returns the $receiver value if the result of $f applied on it is true otherwise null.
+ * 
+ * Example usage:
+ * 
+ * ```
+ * 1.filter{ it > 5 } // null
+ *
+ * 1.filter{ it < 5 } // 1
+ * ```
+ * 
+ * @receiver the vlaue which $f will be appliead on.
+ * @param f function to apply in the right side value.
+ * @return the receiver if the result of applying $f on the right side value is true otherwise null.
+ */
+inline fun <A> A?.filter(f: (A) -> Boolean): A? =
+    flatMap { a -> if (f(a)) a else null }
+
+
+/**
+ * Returns the $receiver value if the result of $f applied on it is false otherwise null.
+ * 
+ * Example usage:
+ * 
+ * ```
+ * 1.filterNot{ it > 5 } // 1
+ *
+ * 1.filterNot{ it < 5 } // null
+ * ```
+ * 
+ * @receiver the vlaue which $f will be appliead on.
+ * @param f function to apply in the right side value.
+ * @return the receiver if the result of applying $f on the right side value is false otherwise null.
+ */
+inline fun <A> A?.filterNot(f: (A) -> Boolean): A? = 
+    flatMap { a -> if (!f(a)) a else null }
+
 
 /**
  *
  */
-inline fun <A, B> A?.flatMap(f: (A) -> B?): B? = this?.let(f)
+inline fun <A> A?.exists(f: (A) -> Boolean): Boolean = 
+    fold({ false }, f)
+
 
 /**
  *
  */
-inline fun <A> A?.filter(f: (A) -> Boolean): A? = flatMap { a -> if (f(a)) a else null }
+inline fun <A> A?.orElse(f: () -> A): A = 
+    fold(f, ::id)
+
 
 /**
  *
  */
-inline fun <A> A?.filterNot(f: (A) -> Boolean): A? = flatMap { a -> if (!f(a)) a else null }
+fun <A> A?.or(a: A): A = 
+    fold({ a }, ::id)
+
 
 /**
  *
  */
-inline fun <A> A?.exists(f: (A) -> Boolean): Boolean = fold({ false }, f)
-
-/**
- *
- */
-inline fun <A> A?.orElse(f: () -> A): A = fold(f, ::id)
-
-/**
- *
- */
-fun <A> A?.or(a: A): A = fold({ a }, ::id)
-
-/**
- *
- */
-fun <A, B> A?.ap(ff: ((A) -> B)?): B? = ff.flatMap { this.map(it) }
-
-/**
- *
- */
-fun <A> Boolean.maybe(f: () -> A): A? = if (this) f() else null
+fun <A> Boolean.maybe(f: () -> A): A? = 
+    if (this) f() else null
