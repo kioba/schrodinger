@@ -129,7 +129,7 @@ inline fun <A, B> A?.map(f: (A) -> B): B? =
  * null.flatMap{ getAge() }
  * ```
  * 
- * @receiver the vlaue which $f will be appliead if it is a right side value.
+ * @receiver the value which $f will be applied if it is a right side value.
  * @param f function to apply in the right side value.
  * @return the result of applying $f on the value if it is a right side value otherwise null.
  */
@@ -148,7 +148,7 @@ inline fun <A, B> A?.flatMap(f: (A) -> B?): B? =
  * 1.filter{ it < 5 } // 1
  * ```
  * 
- * @receiver the vlaue which $f will be appliead on.
+ * @receiver the value which $f will be applied on.
  * @param f function to apply in the right side value.
  * @return the receiver if the result of applying $f on the right side value is true otherwise null.
  */
@@ -167,7 +167,7 @@ inline fun <A> A?.filter(f: (A) -> Boolean): A? =
  * 1.filterNot{ it < 5 } // null
  * ```
  * 
- * @receiver the vlaue which $f will be appliead on.
+ * @receiver the value which $f will be applied on.
  * @param f function to apply in the right side value.
  * @return the receiver if the result of applying $f on the right side value is false otherwise null.
  */
@@ -193,11 +193,11 @@ inline fun <A> A?.orElse(f: () -> A): A =
  *
  */
 fun <A> A?.or(f: () -> A): A = 
-    fold(::f, ::id)
+    fold(f, ::id)
 
 
 /**
- * returns the result of $f in case of the receiver is true otherwsie null.
+ * returns the result of $f in case of the receiver is true otherwise null.
  *
  * Example usage:
  * ```
