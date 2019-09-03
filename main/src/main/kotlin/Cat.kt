@@ -176,24 +176,41 @@ inline fun <A> A?.filterNot(f: (A) -> Boolean): A? =
 
 
 /**
+ * Returns the result of $f applied on the $receiver.
+ * 
+ * Example usage:
+ * 
+ * ```
+ * 1.exists{ it > 5 } // false
  *
+ * 1.exists{ it < 5 } // true
+ * ```
+ * 
+ * @receiver the vlaue which $f will be appliead on.
+ * @param f function to apply in the right side value.
+ * @return the result of applying $f on the right side value otherwise false.
  */
 inline fun <A> A?.exists(f: (A) -> Boolean): Boolean = 
     fold({ false }, f)
 
 
 /**
+ * Returns the $receiver if it exists otherwise result of $f.
+ * 
+ * Example usage:
+ * 
+ * ```
+ * null.or{ 5 } // 5
  *
+ * 1.or{ 5 } // 1
+ * ```
+ * 
+ * @receiver the vlaue which will be returned if it is a right side value.
+ * @param f function which will be returned if the $receiver is a left side vaule.
+ * @return the result of applying $f or the $receiver.
  */
-inline fun <A> A?.orElse(f: () -> A): A = 
+inline fun <A> A?.or(f: () -> A): A = 
     fold(f, ::id)
-
-
-/**
- *
- */
-fun <A> A?.or(f: () -> A): A = 
-    fold(::f, ::id)
 
 
 /**
