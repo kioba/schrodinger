@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [flatMap](./flat-map.md)
+[schrodinger ](index.md) / [flatMap](./flat-map.md)
 
 # flatMap
 

@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [exists](./exists.md)
+[schrodinger ](index.md) / [exists](./exists.md)
 
 # exists
 

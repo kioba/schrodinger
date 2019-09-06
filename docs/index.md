@@ -1,12 +1,11 @@
-[schrodinger](../index.md) / [dev.kioba.cat](./index.md)
-
+[schrodinger](./index.md)
 ## Package dev.kioba.cat
 
 ### Extensions for External Classes
 
 | Name | Summary |
 |---|---|
-| [kotlin.Boolean](kotlin.-boolean/index.md) |  |
+| [maybe](maybe.md) | `fun <A> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`.maybe(f: () -> `[`A`](maybe.md#A)`): `[`A`](maybe.md#A)`?`<br>returns the result of $f in case of the receiver is true otherwsie null. |
 
 ### Functions
 

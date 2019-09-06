@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [id](./id.md)
+[schrodinger ](index.md) / [id](./id.md)
 
 # id
 
