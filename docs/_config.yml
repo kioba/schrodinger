@@ -1,5 +1,5 @@
 title: "Schrodinger"
-description: "An Arrow Option implementation with Kotlin Nullable types"
+description: "An Arrow Option implementation with Kotlin Nullable type"s
 url: https://kioba.dev/schrodinger
 relative_permalinks: false
 
