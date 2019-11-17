@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [filterNot](./filter-not.md)
+[schrodinger ](index.md) / [filterNot](./filter-not.md)
 
 # filterNot
 

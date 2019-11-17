@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [fold](./fold.md)
+[schrodinger ](index.md) / [fold](./fold.md)
 
 # fold
 

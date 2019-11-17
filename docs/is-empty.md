@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [isEmpty](./is-empty.md)
+[schrodinger ](index.md) / [isEmpty](./is-empty.md)
 
 # isEmpty
 

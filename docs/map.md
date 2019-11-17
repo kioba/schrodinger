@@ -1,4 +1,4 @@
-[schrodinger](../index.md) / [dev.kioba.cat](index.md) / [map](./map.md)
+[schrodinger ](index.md) / [map](./map.md)
 
 # map
 

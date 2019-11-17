@@ -1,4 +1,4 @@
-[schrodinger](../../index.md) / [dev.kioba.cat](../index.md) / [kotlin.Boolean](index.md) / [maybe](./maybe.md)
+[schrodinger](index.md) / [maybe](./maybe.md)
 
 # maybe
 
