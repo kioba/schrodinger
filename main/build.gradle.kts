@@ -11,7 +11,7 @@ buildscript {
 }
 
 plugins {
-    kotlin("jvm") version "1.3.41"
+    kotlin("jvm") version "1.3.50"
     id("org.jetbrains.dokka") version "0.9.18"
 }
 group = "dev.kioba.schrodinger"
@@ -40,8 +40,12 @@ tasks.withType<KotlinCompile>().configureEach {
 }
 
 val dokka by tasks.getting(DokkaTask::class) {
-    outputDirectory = "${rootProject.projectDir}/docs"
+    outputDirectory = "${rootProject.projectDir}/dokka_docs"
     outputFormat = "gfm"
+    // Disable linking to online kotlin-stdlib documentation
+    noStdlibLink = true
+    // Disable linking to online JDK documentation
+    noJdkLink = true
     // outputFormat = "jekyll"
     // outputFormat = "kotlin-website"
     jdkVersion = 8

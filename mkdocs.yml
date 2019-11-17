@@ -1,0 +1,21 @@
+site_name: Schrodinger
+site_description: 'Nullable Type extention Library inspired by Arrow Option'
+site_author: 'Karoly Somodi [Kioba]'
+site_url: 'https://kioba.dev/schrodinger/'
+
+# Repository
+repo_name: 'kioba/schrodinger'
+repo_url: 'https://github.com/kioba/schrodinger'
+
+# Configuration
+theme:
+  name: 'material'
+  feature:
+    tabs: false
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'

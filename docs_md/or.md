@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [or](./or.md)
-
 # or
 
-`inline fun <A> `[`A`](or.md#A)`?.or(f: () -> `[`A`](or.md#A)`): `[`A`](or.md#A)
+`inline fun <A> A?.or(f: () -> A): A`
 
 Returns the $receiver if it exists otherwise result of $f.
 

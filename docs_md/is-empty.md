@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [isEmpty](./is-empty.md)
-
 # isEmpty
 
-`fun <A> `[`A`](is-empty.md#A)`?.isEmpty(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+`fun <A> A?.isEmpty(): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
 
 Checks if the values is left value or not.
 

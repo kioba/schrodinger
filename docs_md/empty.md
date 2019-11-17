@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [empty](./empty.md)
-
 # empty
 
-`fun <A> empty(): `[`A`](empty.md#A)`?`
+`fun <A> empty(): A?`
 
 Constructs a left side value.
 

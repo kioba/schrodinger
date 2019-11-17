@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [filter](./filter.md)
-
 # filter
 
-`inline fun <A> `[`A`](filter.md#A)`?.filter(f: (`[`A`](filter.md#A)`) -> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): `[`A`](filter.md#A)`?`
+`inline fun <A> A?.filter(f: (A) -> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`): A?`
 
 Returns the $receiver value if the result of $f applied on it is true otherwise null.
 

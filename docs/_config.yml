@@ -1,7 +1,0 @@
-title: "Schrodinger"
-description: "An Arrow Option implementation with Kotlin Nullable types"
-url: https://kioba.dev/schrodinger
-relative_permalinks: false
-
-markdown: kramdown
-theme: jekyll-theme-slate

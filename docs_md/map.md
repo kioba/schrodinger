@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [map](./map.md)
-
 # map
 
-`inline fun <A, B> `[`A`](map.md#A)`?.map(f: (`[`A`](map.md#A)`) -> `[`B`](map.md#B)`): `[`B`](map.md#B)`?`
+`inline fun <A, B> A?.map(f: (A) -> B): B?`
 
 Map higher order function takes the right side value and applies on f.
 

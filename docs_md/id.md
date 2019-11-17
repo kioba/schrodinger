@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [id](./id.md)
-
 # id
 
-`fun <A> id(a: `[`A`](id.md#A)`): `[`A`](id.md#A)
+`fun <A> id(a: A): A`
 
 Identity function.
 

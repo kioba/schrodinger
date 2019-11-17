@@ -1,8 +1,6 @@
-[schrodinger ](index.md) / [fold](./fold.md)
-
 # fold
 
-`inline fun <A, B> `[`A`](fold.md#A)`?.fold(ifNull: () -> `[`B`](fold.md#B)`, ifSome: (`[`A`](fold.md#A)`) -> `[`B`](fold.md#B)`): `[`B`](fold.md#B)
+`inline fun <A, B> A?.fold(ifNull: () -> B, ifSome: (A) -> B): B`
 
 Fold higher order function reduces the left or right side into a return value
 

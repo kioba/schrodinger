@@ -1,8 +1,6 @@
-[schrodinger](index.md) / [maybe](./maybe.md)
-
 # maybe
 
-`fun <A> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`.maybe(f: () -> `[`A`](maybe.md#A)`): `[`A`](maybe.md#A)`?`
+`fun <A> `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`.maybe(f: () -> A): A?`
 
 returns the result of $f in case of the receiver is true otherwsie null.
 
